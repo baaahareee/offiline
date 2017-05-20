@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+آفلاین یک ویژگی است و ضروری است که ما آن را از ابتدای پروژه در نظر بگیریم. به ندرت رخ می¬دهد که به اضافه کردن پشتیبانی آفلاین از ابتدا¬ی توسعه اپلیکیشن تاکید داشته باشیم. مشتریان موبایل از ابتدا طوری طراحی می شوند که آفلاین را پشتیبانی کنند که اجازه دسترسی وقتی که هیچ برقراری ارتباطی امکان¬پذیر نیست وجود داشته باشد. و داده¬ها زمانی که اینترنت در¬دسترس است به طور شفاف همگام می¬شوند   .
+دستورالعمل ها¬ی اصلی:
+1)	جدا  کردن اپلیکیشن از سرور:  از نظر تاریخی وقتی محتویات وب را تولید می¬کنیم, سرور نقش اصلی را در lifting ها-ی سنگین دارد. داده ها در دیتابیس ذخیره می¬شود و از طریق کد سرور قابل دسترسی است سپس دست¬کاری می¬شود و لز طریق یک مجموعه از قالب ها به html ارایه می¬شود. آفلاین ,کل پشته MCV به سمت کد کلاینت انتقال می-دهد و سمت سرور تنها شامل JSON API  است. این باعث می¬شود که سرور به طور عمده بدون منطق باشد و به آسانی بتوانیم برای آن تست های واحد بنویسیم.
+2)	ایجاد بسته بندی های API object در سمت کد کلاینت: API object ایجاد کنید که نشان دهنده ی عملکرد آن است. این باعث جدایی بهتر کد می شود در نتیجه دیباگ کردن و تست کردن می¬شود.  Object ای که ایجاد می¬شود به طور داخلی از ajax استفاده می¬کند اما از نظر بقیه برنامه جزییات پیاده سازی نا¬مرتبط است.
+3)	جدا¬کردن به¬روزرسانی داده از ذخیره آن: از شی( object )کنترل کننده داده برای ذخیره و برنامه ریزی به¬روزرسانی استفاده کنید و تمام در¬خواست¬ها را از طریق این proxy object انجام دهید. با صدا نزدن سرور به طور مستقیم قادر خواهید بود داده را به طور محلی کش کنید.این شی باید بتواند خود چندبخشی کند هم چنین باید بتواند این بخش ها دوباره  به حافظه بخواند.
 
-You can use the [editor on GitHub](https://github.com/baaahareee/offiline/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/baaahareee/offiline/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
